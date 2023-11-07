@@ -4,6 +4,7 @@ import { Box, Container, Flex, Heading } from "@radix-ui/themes";
 import { useState } from "react";
 import { Counter } from "./Counter";
 import { CreateCounter } from "./CreateCounter";
+import AddKiosk from "./components/AddKiosk";
 
 function App() {
   const currentAccount = useCurrentAccount();
@@ -30,6 +31,10 @@ function App() {
         <Box>
           <ConnectButton />
         </Box>
+
+          <Box>
+              <AddKiosk />
+          </Box>
       </Flex>
       <Container>
         <Container
